@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Conversor de Divisas</title>
+</head>
+<body>
+    <main class="main">
+        <h1 class="title">Conversor de Divisas</h1>
+        <form class="convertidor">
+            <label for="cant">Cantidad</label><br>
+            <input type="number" id="cant" min="0" required><br>
+            <label for="">Divisa:</label><br>
+            <select name="divisaA" id="divisaA">
+                <option value="usd" name="divisaA">USD-Dolar estado unidense</option>
+                <option value="eur" name="divisaA">EUR-Euro</option>
+                <option value="gbp" name="divisaA">GBP-Libra esterlina</option>
+                <option value="chf" name="divisaA">CHF-Franco suizo</option>
+                <option value="jpy" name="divisaA">JPY-Yen japonés</option>
+                <option value="hkd" name="divisaA">HKD-Dólar hongkonés</option>
+                <option value="cad" name="divisaA">CAD-Dólar canadiense</option>
+                <option value="cny" name="divisaA">CNY-Yuan chino</option>
+                <option value="aud" name="divisaA">AUD-Dólar australiano</option>
+                <option value="brl" name="divisaA">BRL-Real brasileño</option>
+                <option value="cod" name="divisaA">COD-Peso colombianos</option>
+            </select><br>
+            <label for="">Pasar a:</label><br>
+            <select name="divisaC" id="">
+                <option value="usd">USD-Dolar estado unidense</option>
+                <option value="eur">EUR-Euro</option>
+                <option value="gbp">GBP-Libra esterlina</option>
+                <option value="chf">CHF-Franco suizo</option>
+                <option value="jpy">JPY-Yen japonés</option>
+                <option value="hkd">HKD-Dólar hongkonés</option>
+                <option value="cad">CAD-Dólar canadiense</option>
+                <option value="cny">Yuan chino</option>
+                <option value="aud">Dólar australiano</option>
+                <option value="brl">BRL-Real brasileño</option>
+                <option value="cod">COD-Peso colombianos</option>
+            </select><br>
+            <button>Convertir</button><br>
+            <span>Resultado</span><br>
+            <input type="number" id="result" readonly>
+        </form>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://i.pinimg.com/originals/ce/dd/d2/ceddd227ef3a2729617bf14283123beb.jpg);
+    background-size: 100vw;
+    background-position: initial;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+p{
+    text-align: center;
+    margin-top: -35px;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.inputs{
+    text-align: end;
+}
+
+.inputs input{
+    width: 200px;
+}
+
+.imc {
+    margin: 10px;
+    
+}
+
+.imc [type=radio]{
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.imc [type=radio] + img{
+    cursor: pointer;
+}
+
+.imc [type=radio]:checked + img{
+    border: 3px solid #be81e7;
+    border-radius: 55px;
+}
+
+
+.btn{
+    padding: 10px;
+}
+
+.paciente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin: 10px;
+}
+
+.paciente h3{
+    font-size: 35px;
+    margin: 0;
+}
+
+.diasable{
+    visibility: hidden;
+}
+
+.active{
+    visibility: visible;
+}
+
+input[type=range] {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    padding: 0;
+    background-image: linear-gradient(to right, #0083DE, #01FA48, #FADA01, #FF1107);
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin: 10px;
+  }
+
+.paciente h4{
+    font-size: 25px;
+    margin: 0;
+}
+

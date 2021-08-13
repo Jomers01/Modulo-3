@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <h1>Caculadora IMC</h1>
+    <p>Descubre su indicie de masa corporal</p>
+    <div class="container">
+        <div class="imc">
+            <label for="sexM">
+                <input type="radio" id="sexM" name="sex" value="Maculino" class="radio" required>
+                <img src="https://www.clinicalascondes.cl/Dev_CLC/media/Imagenes/redi_imc/btn-man.png" alt="">
+            </label>
+            <label for="sexF">
+                <input type="radio" id="sexF" name="sex" value="Femenino" class="radio" required>
+                <img src="https://www.clinicalascondes.cl/Dev_CLC/media/Imagenes/redi_imc/btn-woman.png" alt="">
+            </label>
+        </div>
+        <div class="inputs">
+            <div class="imc">
+                <label for="age">Edad </label><input type="number" id="age" min="0" max="110" placeholder="20" required>
+            </div>
+            <div class="imc">
+                <label for="peso">Peso </label><input type="number" id="peso" placeholder="60" required>
+            </div>
+            <div class="imc">
+                <label for="alt">Altura </label><input type="number" id="alt" placeholder="170" required>
+            </div>
+        </div>
+        
+        <button id="btn" class="btn">Calcular IMC</button>
+        <div class="paciente diasable">
+            <h3 id="result"></h3>
+            <input type="range" id="rango" min="10" max="40">
+            <h4 id="condicion"></h4>
+        </div>
+        <div id="plotlyChart" class="grafico"></div>
+    </div>
+    <script src="./script/script.js" type="module"></script>
+    <script src="./data/data.js" type="module"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</body>
+</html>
