@@ -10,38 +10,38 @@
 <body>
     <main class="main">
         <h1 class="title">Conversor de Divisas</h1>
-        <form class="convertidor">
+        <form class="convertidor" id="form">
             <label for="cant">Cantidad</label><br>
             <input type="number" id="cant" min="0" required><br>
             <label for="">Divisa:</label><br>
             <select name="divisaA" id="divisaA">
-                <option value="usd" name="divisaA">USD-Dolar estado unidense</option>
-                <option value="eur" name="divisaA">EUR-Euro</option>
-                <option value="gbp" name="divisaA">GBP-Libra esterlina</option>
-                <option value="chf" name="divisaA">CHF-Franco suizo</option>
-                <option value="jpy" name="divisaA">JPY-Yen japonés</option>
-                <option value="hkd" name="divisaA">HKD-Dólar hongkonés</option>
-                <option value="cad" name="divisaA">CAD-Dólar canadiense</option>
-                <option value="cny" name="divisaA">CNY-Yuan chino</option>
-                <option value="aud" name="divisaA">AUD-Dólar australiano</option>
-                <option value="brl" name="divisaA">BRL-Real brasileño</option>
-                <option value="cod" name="divisaA">COD-Peso colombianos</option>
+                <option value="USD" name="divisaA">USD-Dolar estado unidense</option>
+                <option value="EUR" name="divisaA">EUR-Euro</option>
+                <option value="GBP" name="divisaA">GBP-Libra esterlina</option>
+                <option value="CHF" name="divisaA">CHF-Franco suizo</option>
+                <option value="JPY" name="divisaA">JPY-Yen japonés</option>
+                <option value="HKD" name="divisaA">HKD-Dólar hongkonés</option>
+                <option value="CAD" name="divisaA">CAD-Dólar canadiense</option>
+                <option value="CNY" name="divisaA">CNY-Yuan chino</option>
+                <option value="AUD" name="divisaA">AUD-Dólar australiano</option>
+                <option value="BRL" name="divisaA">BRL-Real brasileño</option>
+                <option value="COP" name="divisaA">COP-Peso colombianos</option>
             </select><br>
             <label for="">Pasar a:</label><br>
-            <select name="divisaC" id="">
-                <option value="usd">USD-Dolar estado unidense</option>
-                <option value="eur">EUR-Euro</option>
-                <option value="gbp">GBP-Libra esterlina</option>
-                <option value="chf">CHF-Franco suizo</option>
-                <option value="jpy">JPY-Yen japonés</option>
-                <option value="hkd">HKD-Dólar hongkonés</option>
-                <option value="cad">CAD-Dólar canadiense</option>
-                <option value="cny">Yuan chino</option>
-                <option value="aud">Dólar australiano</option>
-                <option value="brl">BRL-Real brasileño</option>
-                <option value="cod">COD-Peso colombianos</option>
+            <select name="divisaC" id="divisaC">
+                <option value="USD" name="divisaC">USD-Dolar estado unidense</option>
+                <option value="EUR" name="divisaC">EUR-Euro</option>
+                <option value="GBP" name="divisaC">GBP-Libra esterlina</option>
+                <option value="CHF" name="divisaC">CHF-Franco suizo</option>
+                <option value="JPY" name="divisaC">JPY-Yen japonés</option>
+                <option value="HKD" name="divisaC">HKD-Dólar hongkonés</option>
+                <option value="CAD" name="divisaC">CAD-Dólar canadiense</option>
+                <option value="CNY" name="divisaC">CNY-Yuan chino</option>
+                <option value="AUD" name="divisaC">AUD-Dólar australiano</option>
+                <option value="BRL" name="divisaC">BRL-Real brasileño</option>
+                <option value="COP" name="divisaC">COP-Peso colombianos</option>
             </select><br>
-            <button>Convertir</button><br>
+            <button id="btn">Convertir</button><br>
             <span>Resultado</span><br>
             <input type="number" id="result" readonly>
         </form>

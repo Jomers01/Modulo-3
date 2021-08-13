@@ -9,10 +9,11 @@
     <title>Calculadora IMC</title>
 </head>
 <body>
-    <h1>Caculadora IMC</h1>
+    <h1>Calculadora IMC</h1>
     <p>Descubre su indicie de masa corporal</p>
     <div class="container">
         <div class="imc">
+            <h3 class="title">Ingrese su genero</h3>
             <label for="sexM">
                 <input type="radio" id="sexM" name="sex" value="Maculino" class="radio" required>
                 <img src="https://www.clinicalascondes.cl/Dev_CLC/media/Imagenes/redi_imc/btn-man.png" alt="">
@@ -27,19 +28,21 @@
                 <label for="age">Edad </label><input type="number" id="age" min="0" max="110" placeholder="20" required>
             </div>
             <div class="imc">
-                <label for="peso">Peso </label><input type="number" id="peso" placeholder="60" required>
+                <label for="peso">Peso(Kg) </label><input type="number" id="peso" placeholder="60" required>
             </div>
             <div class="imc">
-                <label for="alt">Altura </label><input type="number" id="alt" placeholder="170" required>
+                <label for="alt">Altura(cm) </label><input type="number" id="alt" placeholder="170" required>
             </div>
         </div>
         
         <button id="btn" class="btn">Calcular IMC</button>
+
         <div class="paciente diasable">
             <h3 id="result"></h3>
             <input type="range" id="rango" min="10" max="40">
             <h4 id="condicion"></h4>
         </div>
+        <h3 class="title">Estadisticas</h3>
         <div id="plotlyChart" class="grafico"></div>
     </div>
     <script src="./script/script.js" type="module"></script>

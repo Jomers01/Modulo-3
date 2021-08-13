@@ -12,6 +12,10 @@ h1{
     font-size: 60px;
 }
 
+.title{
+    text-align: center;
+}
+
 p{
     text-align: center;
     margin-top: -35px;
@@ -51,7 +55,7 @@ p{
 }
 
 .imc [type=radio]:checked + img{
-    border: 3px solid #be81e7;
+    border: 3px solid #8e27d3;
     border-radius: 55px;
 }
 
