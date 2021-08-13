@@ -11,39 +11,53 @@
     <main class="main">
         <h1 class="title">Conversor de Divisas</h1>
         <form class="convertidor" id="form">
-            <label for="cant">Cantidad</label><br>
-            <input type="number" id="cant" min="0" required><br>
-            <label for="">Divisa:</label><br>
-            <select name="divisaA" id="divisaA">
-                <option value="USD" name="divisaA">USD-Dolar estado unidense</option>
-                <option value="EUR" name="divisaA">EUR-Euro</option>
-                <option value="GBP" name="divisaA">GBP-Libra esterlina</option>
-                <option value="CHF" name="divisaA">CHF-Franco suizo</option>
-                <option value="JPY" name="divisaA">JPY-Yen japonés</option>
-                <option value="HKD" name="divisaA">HKD-Dólar hongkonés</option>
-                <option value="CAD" name="divisaA">CAD-Dólar canadiense</option>
-                <option value="CNY" name="divisaA">CNY-Yuan chino</option>
-                <option value="AUD" name="divisaA">AUD-Dólar australiano</option>
-                <option value="BRL" name="divisaA">BRL-Real brasileño</option>
-                <option value="COP" name="divisaA">COP-Peso colombianos</option>
-            </select><br>
-            <label for="">Pasar a:</label><br>
-            <select name="divisaC" id="divisaC">
-                <option value="USD" name="divisaC">USD-Dolar estado unidense</option>
-                <option value="EUR" name="divisaC">EUR-Euro</option>
-                <option value="GBP" name="divisaC">GBP-Libra esterlina</option>
-                <option value="CHF" name="divisaC">CHF-Franco suizo</option>
-                <option value="JPY" name="divisaC">JPY-Yen japonés</option>
-                <option value="HKD" name="divisaC">HKD-Dólar hongkonés</option>
-                <option value="CAD" name="divisaC">CAD-Dólar canadiense</option>
-                <option value="CNY" name="divisaC">CNY-Yuan chino</option>
-                <option value="AUD" name="divisaC">AUD-Dólar australiano</option>
-                <option value="BRL" name="divisaC">BRL-Real brasileño</option>
-                <option value="COP" name="divisaC">COP-Peso colombianos</option>
-            </select><br>
-            <button id="btn">Convertir</button><br>
-            <span>Resultado</span><br>
-            <input type="number" id="result" readonly>
+            <div class="container">
+            <div class="img">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple125/v4/32/c1/55/32c1551c-0841-eae0-6cdd-a2b9d29242c1/source/512x512bb.jpg" alt="" width="100px"><br>
+            </div>
+            <div class="cantidad">
+                <input type="number" id="cant" min="0" required placeholder="Cantidad de Dinero:"><br>
+            </div>
+            <div class="monedaA">
+                <select name="divisaA" id="divisaA">
+                    <option disabled  selected>Elige tu moneda</option>
+                    <option value="USD" name="divisaA">USD-Dolar estado unidense</option>
+                    <option value="EUR" name="divisaA">EUR-Euro</option>
+                    <option value="GBP" name="divisaA">GBP-Libra esterlina</option>
+                    <option value="CHF" name="divisaA">CHF-Franco suizo</option>
+                    <option value="JPY" name="divisaA">JPY-Yen japonés</option>
+                    <option value="HKD" name="divisaA">HKD-Dólar hongkonés</option>
+                    <option value="CAD" name="divisaA">CAD-Dólar canadiense</option>
+                    <option value="CNY" name="divisaA">CNY-Yuan chino</option>
+                    <option value="AUD" name="divisaA">AUD-Dólar australiano</option>
+                    <option value="BRL" name="divisaA">BRL-Real brasileño</option>
+                    <option value="COP" name="divisaA">COP-Peso colombianos</option>
+                </select>  
+            </div>
+            <div class="monedaC">
+                <select name="divisaC" id="divisaC">
+                    <option disabled  selected>Elige tu moneda</option>
+                    <option value="USD" name="divisaC">USD-Dolar estado unidense</option>
+                    <option value="EUR" name="divisaC">EUR-Euro</option>
+                    <option value="GBP" name="divisaC">GBP-Libra esterlina</option>
+                    <option value="CHF" name="divisaC">CHF-Franco suizo</option>
+                    <option value="JPY" name="divisaC">JPY-Yen japonés</option>
+                    <option value="HKD" name="divisaC">HKD-Dólar hongkonés</option>
+                    <option value="CAD" name="divisaC">CAD-Dólar canadiense</option>
+                    <option value="CNY" name="divisaC">CNY-Yuan chino</option>
+                    <option value="AUD" name="divisaC">AUD-Dólar australiano</option>
+                    <option value="BRL" name="divisaC">BRL-Real brasileño</option>
+                    <option value="COP" name="divisaC">COP-Peso colombianos</option>
+                </select>
+            </div>
+            <div class="boton">
+                <button id="btn">Convertir</button><br>
+            </div>
+            <div class="resultado">
+                <span>Resultado</span><br>
+                <input type="number" id="result" readonly>  
+            </div>
+            </div>
         </form>
     </main>
 
