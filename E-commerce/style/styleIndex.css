@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar{
+    background-color: aquamarine;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    height: 50px;
+}
+
+    ul{
+        width: 97%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        ul li{
+            display: inline;
+        }
+
+.titulo-categorias{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.categorias{
+    display: flex;
+    justify-content: center;
+}
+
+    .adulto, .infantil{
+        margin: 50px;
+    }
+
+        .card{
+            padding: 10px;
+        }

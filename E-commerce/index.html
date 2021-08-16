@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos fontawasome-->
+    <link rel="stylesheet" href="./fontawesome v5.15.4/css/all.min.css">
+    <!-- Estilos Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./style/styleIndex.css">
+    <title>Inicio | E-Commerce</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Nav-bar -->
+            <div class="nav-bar">
+                <nav class="nav">
+                    <ul>
+                        <li></li>
+                        <li><a href="./index.html">Menu</a></li>
+                        <li class="shooping-cart"><a href="./carrito.html"><button type="button" class="btn btn-primary position-relative">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                              99+
+                              <span class="visually-hidden">unread messages</span>
+                            </span>
+                          </button></a></li>                    </ul>
+                </nav>
+            </div>
+
+        <!-- Slider de peliculas -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://skitguys.com/media/images/video/Spectrum_Flow_Bienvenido_CNM-HD.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        <!-- Categorias -->
+            <h2 class="titulo-categorias">Categorías</h2>
+            <div class="categorias">
+                <div class="adulto">
+                    <div class="card" style="width: 18rem;">
+                        <h5 class="card-title text-lg-center">Jovenes y Adultos</h5>
+                        <img src="https://d500.epimg.net/cincodias/imagenes/2020/12/31/lifestyle/1609408585_467254_1609408795_noticia_normal.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <a href="./productos.html"><button id="adulto" class="btn btn-primary ">Ver peliculas</button></a>
+                        </div>
+                      </div>
+                </div>
+                <div class="infantil">
+                    <div class="card" style="width: 18rem;">
+                        <h5 class="card-title text-lg-center">Infantil</h5>
+                        <img src="https://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20141217/12465171_xl.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="./productos.html"><button id="infantil" class="btn btn-primary ">Ver peliculas</button></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+    </div>
+    <!-- Script bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script src="./script/script.js" type="module"></script>
+    <script src="./data/categoria.js" type="module"></script>
+</body>
+</html>

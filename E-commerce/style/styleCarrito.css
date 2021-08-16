@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar{
+    background-color: aquamarine;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    height: 50px;
+}
+
+    ul{
+        width: 97%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        ul li{
+            display: inline;
+        }
+
+.carrito{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.cant{
+    width: 40px;
+}
+
+.compra{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.compra table{
+    text-align: end;
+}
+
+.btn-carrito-alquilar{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: lightgreen;
+}
