@@ -56,5 +56,4 @@ function actContador() {
         countN = JSON.stringify(cartCant.length);
         count.innerHTML = `${countN}`;
     })
-
 }
