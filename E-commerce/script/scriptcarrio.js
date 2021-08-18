@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </tr>
       </thead>
     </table>
-    <button id="btn-carrito-alquilar" class="btn-carrito-alquilar">Alquilar</button>
+    <a href="./pago.html"><button id="btn-carrito-alquilar" class="btn-carrito-alquilar">Alquilar</button></a>
     </div>`;
 });
 

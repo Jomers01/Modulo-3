@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const pelicula = async(url) =>{
         const data = await fetch(url);
         peli = await data.json();
+        actContador()
         carruse()
+        
     };
     pelicula(URL_API);
 });
@@ -48,3 +50,15 @@ btnI.addEventListener('click',() =>{
 
     localStorage.setItem('Categoria', "Infantil");
 })
+
+function actContador() {
+    let count = document.querySelector('#count');
+    let cartCant = JSON.parse(localStorage.getItem("Carrito"));
+    let countN = 0;
+    cartCant.forEach(cant =>{
+        count.innerHTML = "";
+        countN = JSON.stringify(cartCant.length);
+        count.innerHTML = `${countN}`;
+    })
+
+}

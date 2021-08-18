@@ -1,5 +1,4 @@
 objCart = JSON.parse(localStorage.getItem("Carrito"));
-console.log(objCart);
 
 document.addEventListener('DOMContentLoaded', ()=>{
     const objDetalle = JSON.parse(localStorage.getItem('Pelicula'));

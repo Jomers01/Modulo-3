@@ -7,7 +7,7 @@ const ctgI = document.querySelector('#infantil2');
 let cant = 0;
 let title;
 objCart = JSON.parse(localStorage.getItem("Carrito"));
-console.log(objCart);
+
 
 //Capturamos la API
 document.addEventListener('DOMContentLoaded', ()=>{
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         peliculas()
     };
     pelicula(URL_API);
-    // actContador()
+    actContador()
 
 })
 
@@ -34,9 +34,9 @@ function peliculas(){
 
             portada.innerHTML = 
                 `<div class="card" style="width: 13rem; height: 19.6rem; background-color: transparent; border: none;">
-                <a href="#" class="img" id="${Titulo}" onclick="descripcion(id)"><img src="${ImgPortada}" class="card-img-top" alt=""></a>
+                <a href="./detalleProducto.html" class="img" id="${Titulo}" onclick="descripcion(id)"><img src="${ImgPortada}" class="card-img-top" alt=""></a>
                 <div class="card-body">
-                    <a href="./carrito.html" class="btn btn-primary" id="${Titulo}" onclick="agregarCarrito(id)">Alquilar</a><input id="cant" type="number" class="cant" min="0" value="0">
+                    <a href="./carrito.html" class="btn btn-primary" id="${Titulo}" onclick="agregarPeli(id)">Alquilar</a><input onblur="agregarCant(value)" id="cant" type="number" class="cant" min="0" value="0">
                 </div>
                 </div>`
             div.appendChild(portada);
@@ -47,7 +47,7 @@ function peliculas(){
                 `<div class="card" style="width: 13rem; height: 19.6rem; background-color: transparent; border: none;">
                 <a href="./detalleProducto.html" class="img" id="${Titulo}" onclick="descripcion(id)"><img src="${ImgPortada}" class="card-img-top" alt=""></a>
                 <div class="card-body">
-                <a href="#" class="btn btn-primary" id="${Titulo}" onclick="agregarPeli(id)">Alquilar</a><input onblur="agregarCant(value)" id="cant" type="number" class="cant" min="0" value="0">
+                <a href="./carrito.html" class="btn btn-primary" id="${Titulo}" onclick="agregarPeli(id)">Alquilar</a><input onblur="agregarCant(value)" id="cant" type="number" class="cant" min="0" value="0">
                 </div>
                 </div>`
             div.appendChild(portada);
@@ -79,20 +79,20 @@ function agregarCarrito() {
         }
     });
 
-    // actContador()
+    actContador()
 }
 
-// function actContador() {
-//     let count = document.querySelector('#count');
-//     let cartCant = JSON.parse(localStorage.getItem("Carrito"));
-//     let countN = 0;
-//     cartCant.forEach(cant =>{
-//         count.innerHTML = "";
-//         countN = JSON.stringify(cartCant.length);
-//         count.innerHTML = `${countN}`;
-//     })
+function actContador() {
+    let count = document.querySelector('#count');
+    let cartCant = JSON.parse(localStorage.getItem("Carrito"));
+    let countN = 0;
+    cartCant.forEach(cant =>{
+        count.innerHTML = "";
+        countN = JSON.stringify(cartCant.length);
+        count.innerHTML = `${countN}`;
+    })
 
-// }
+}
 
 //Categorias
 ctgA.addEventListener('click',() =>{
