@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar {
+  background-color: rgb(126, 11, 97);
+  position: fixed;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  height: 50px;
+}
+.nav {
+  font-size: 30px;
+  font-family: fantasy;
+  }
+.nav ul li a{
+  text-decoration: none;
+  color:white;
+}
+ul {
+  width: 97%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li {
+  display: inline;
+}
+
+.titulo-categorias {
+  font-family: fantasy;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 45px;
+  color: rgb(126, 11, 97);
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+}
+
+.adulto,
+.infantil {
+  margin: 50px;
+  font-family: fantasy;
+  font-size: 40px;
+  color: rgb(126, 11, 97);
+}
+
+.card {
+  padding: 10px;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(126, 11, 97);
+  font-family: fantasy;
+  font-size: 18px;
+  color: white;
+}

@@ -5,19 +5,75 @@
 
 body{
     background-color: antiquewhite;
+    height: 100vh;
+    padding-top: 50px;
 }
 
 .main{
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: aqua;
+    width: 70%;
+    height: 50vh;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 20px;
+} 
+
+.title{
+    text-align: center;
 }
 
-    .title{
-        padding: 20px;
+.container{
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container div{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.img{
+    grid-column: 2 / 3;
+}
+
+
+.cantidad{
+    grid-column: 1 / 4;
+}
+    .cantidad input{
+        width: 80%;
+        text-align: center;
     }
 
-    .convertidor{
-        
+.monedaA{
+    grid-column: 1 / 2;
+}
+    .monedaA select{
+        width: 33,3%;
     }
 
+.monedaC{
+    grid-column: 2 / 3;
+}
+
+    .monedaC select{
+        width: 33,3%;
+    }
+
+.boton{
+    grid-column: 3 / 4;
+}
+    .boton button{
+        width: 33,3%;
+    }
+
+
+.resultado{
+    grid-column: 1 / 4;
+}

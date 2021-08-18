@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+ 
+}
+
+.nav-bar {
+  background-color: rgb(126, 11, 97);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  height: 50px;
+}
+.nav ul li a{
+  text-decoration: none;
+  color:white;
+}
+ul {
+  width: 97%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li {
+  display: inline;
+}
+.nav {
+  font-size: 30px;
+  font-family: fantasy;
+}
+.aside {
+  background-color: rgb(241, 160, 221);
+  position: fixed;
+  width: 160px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.categoria {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.categoria-aside {
+  padding-top: 30px;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: fantasy;
+  color: rgb(126, 11, 97);
+}
+
+.productos {
+  /* margin: 90px 0 0 20px; */
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: fantasy;
+ 
+  
+
+}
+
+.peliculas {
+  padding: 5px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: rgb(231, 151, 211);
+  height: 380px;
+}
+
+.img {
+  height: 97.4%;
+}
+
+.cant {
+  width: 40px;
+  margin-left: 10px;
+}
+.btn {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(126, 11, 97);
+    font-family: fantasy;
+    font-size: 18px;
+    color: white;
+  }
